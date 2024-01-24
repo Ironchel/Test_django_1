@@ -1,0 +1,42 @@
+{% extends 'flatpages/index0.html' %}
+
+{% block main %}
+    <meta name="description" content="Первая страница"/>
+    <meta name="author" content="Виталий"/>
+    <title>Первая</title>
+{% endblock main %}
+
+{% block content %}
+    {% load static %}
+    <header class="mt-5">
+        <div class="text-center">
+            <h1 class="h1 py-5 m-3"><b>Эта первая страница</b></h1>
+            <img class="img-my mb-5" src="{% static 'assets/full.jpg' %}"
+                 alt="SkillFactory"/>
+        </div>
+    </header>
+    <div class="container d-flex row-cols-2 mt-5 py-5">
+        <section class="container">
+            <h2 class="mb-4">Чем помогает прохождения курсов?</h2>
+            <ul class="fst-italic">
+                <li>Получить дополнительное образование</li>
+                <li>Найти высокооплачиваемую работу</li>
+                <li>Начать тратить свое время не впустую</li>
+                <li>Заводить новые знакомства</li>
+            </ul>
+        </section>
+        <section class="container">
+            <h2 class="mb-4">Какой опыт и знания получаешь тут?</h2>
+            <ul class="fst-italic">
+                <li>Опыт в написании кода</li>
+                <li>Тренировка своего мозга</li>
+                <li>Познания в области ИТ</li>
+                <li>Реальный опыт программиста</li>
+            </ul>
+        </section>
+    </div>
+    <div class="text-center m-5 py-5">
+        <h3 class="m-5">Нужна краткая история? Нажимай на кнопку и читай!</h3>
+        <a class="btn btn-dark btn-lg" type="button" href="/index2">Сюда!</a>
+    </div>
+{% endblock content %}
